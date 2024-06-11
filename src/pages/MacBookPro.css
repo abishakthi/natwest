@@ -1,0 +1,326 @@
+.auto-crafter {
+  text-decoration: none;
+  width: 211px;
+  position: relative;
+  line-height: 40px;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.scenario {
+  width: 1033px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.enter-scenario {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.scenario-input {
+  flex: 1;
+  border-radius: var(--br-9xs) 0 0 var(--br-9xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 var(--padding-5xs) var(--padding-5xs);
+  max-width: 100%;
+}
+.upload-file {
+  text-decoration: none;
+  width: 84px;
+  position: absolute;
+  margin: 0 !important;
+  top: -7px;
+  right: -44px;
+  line-height: 24px;
+  color: inherit;
+  display: inline-block;
+  min-width: 84px;
+  white-space: nowrap;
+}
+.frame-icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.upload-elements,
+.upload-scenario {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.upload-elements {
+  position: relative;
+}
+.upload-scenario {
+  width: 116px;
+  border-radius: 0 var(--br-9xs) var(--br-9xs) 0;
+  background-color: var(--color-dodgerblue);
+  padding: 15px var(--padding-5xs) 11px;
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--color-white);
+}
+.content-element-graph,
+.macbook-pro-inner,
+.scenario-input-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.scenario-input-parent {
+  width: 732px;
+  justify-content: flex-start;
+}
+.content-element-graph,
+.macbook-pro-inner {
+  align-self: stretch;
+  justify-content: center;
+}
+.macbook-pro-inner {
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray);
+  font-family: var(--font-roboto);
+}
+.content-element-graph {
+  flex-wrap: wrap;
+  gap: var(--gap-base);
+}
+.macbook-pro {
+  width: 100%;
+  position: relative;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px var(--padding-5xl) var(--padding-5xl);
+  box-sizing: border-box;
+  gap: 34px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: 36px;
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 750px) {
+  .auto-crafter {
+    font-size: 29px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .macbook-pro {
+    gap: 17px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .auto-crafter {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.searchBox {
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  margin-left: 550px;
+  margin-top: 20px;
+  
+  
+  
+
+}
+
+.searchButton {
+  color: rgb(196, 34, 34);
+  position: absolute;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+/*hover effect*/
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+/*button pressing effect*/
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: rgb(228, 220, 220);
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}
+
+.input-div {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(1, 235, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+  animation: flicker 2s linear infinite;
+}
+
+.icon {
+  color: rgb(1, 235, 252);
+  font-size: 2rem;
+  cursor: pointer;
+  animation: iconflicker 2s linear infinite;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer !important;
+}
+
+@keyframes flicker {
+  0% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+  }
+
+  5% {
+    border: none;
+    box-shadow: none;
+  }
+
+  10% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+  }
+
+  25% {
+    border: none;
+    box-shadow: none;
+  }
+
+  30% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+  }
+
+  100% {
+    border: 2px solid rgb(1, 235, 252);
+    box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+  }
+}
+
+@keyframes iconflicker {
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0.2;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: grey;
+  margin-left: 500px;
+  width: 700px;
+  margin-top:0px;
+  height: 80px; /* Adjust height as needed */
+  margin-right: 20px;
+  
+  
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin-right: 80px;
+}
+
+.App-logo {
+  height: 80px; /* Adjust height as needed */
+  pointer-events: none;
+  margin-right: 80px; /* Space between the logo and the text */
+}
+
+h1 {
+  font-size: 3.5rem; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  color: black;
+}
+
+body {
+  padding-top: 60px; /* Add padding to avoid content being hidden under the fixed header */
+}
+
+
